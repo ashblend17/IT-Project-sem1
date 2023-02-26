@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Gallery-Astronomy Club</title>
+
+
+
+  <style>
+    body{
+        background-image:url(images/andromedaBg.jpeg);
+        background-color: whitesmoke;
+        align-self:center;
+        padding: 2px;
+        background-size:cover;
+        
+        background-repeat: no-repeat;
+        
+    }
+
+    nav {
+    background-color: #3d748ecc;
+    font-size: 18px;
+    display:flexbox;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    position:fixed;
+    
+    top: 15px;
+    
+    right: 15px;
+    left: 15px;
+    z-index: 999;
+  }
+  table:hover{
+    cursor: pointer;
+  }
+  
+  .navCell:hover{
+    color: #f3f3f3;
+  }
+
+  table {
+    border:none;
+    border-collapse: collapse;
+}
+
+table th {
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+}
+
+table th:first-child {
+    border-left: none;
+}
+
+table th:last-child {
+    border-right: none;
+}
+  
+  nav table tr th {
+    text-align: center;
+    padding: 15px;
+  }
+  
+  </style>
+
+
+
+
+
+
+  <script>
+function navHome()
+{
+    window.location.href="Home.html";
+}
+function navGallery()
+{
+    window.location.href="Gallery.html";
+}
+function navMembers()
+{
+    window.location.href="Members.html";
+}
+function navApply()
+{
+    window.location.href="Apply.html";
+}
+function navAbout()
+{
+    window.location.href="AboutUs.html";
+}
+  </script>
+
+
+
+
+
+
+
+</head>
+<body>
+  <nav>
+    <table align="right" class="nav">
+        <tr id="navRow" >
+            <th onclick="navHome()" id="navHome" class="navCell">Home</th>
+            
+            <th onclick="navAbout()" id="navAbout" class="navCell">About Us</th>
+            <th onclick="navMembers()" id="navMembers" class="navCell">Members</th>
+            <th onclick="navGallery()" id="navGallery" class="navCell">Gallery</th>
+            <th onclick="navApply()" id="navApply" class="navCell">Apply</th>
+        </tr>
+    </table>
+  </nav>
+
+<br>
+<h1>About US</h1>
+</body>
+</html>
