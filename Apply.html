@@ -1,68 +1,91 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <title>Apply-Astronomy Club</title>
+  <title>Astronomy Club</title>
 
 
 
   <style>
-    body{
-        background-image:url(images/andromedaBg.jpeg);
-        background-color: whitesmoke;
-        align-self:center;
-        padding: 2px;
-        background-size:cover;
-        
-        background-repeat: no-repeat;
-        
+    body {
+      background-image: url(images/andromedaBg.jpeg);
+      background-color: whitesmoke;
+      align-self: center;
+      padding: 2px;
+      background-size: cover;
+      image-orientation: flip;
+      background-repeat: no-repeat;
+      
     }
 
     nav {
-    background-color: #3d748ecc;
-    font-size: 18px;
-    display:flexbox;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px;
-    position:fixed;
-    
-    top: 15px;
-    
-    right: 15px;
-    left: 15px;
-    z-index: 999;
-  }
-  table:hover{
-    cursor: pointer;
-  }
-  
-  .navCell:hover{
-    color: #f3f3f3;
-  }
+      background-color: rgba(245, 245, 245, 0.600);
+      font-size: 18px;
+      display: flexbox;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px;
+      position: fixed;
+      top: 15px;
+      height: 50px;
+      right: 15px;
+      left: 15px;
+      z-index: 999;
+    }
 
-  table {
-    border:none;
-    border-collapse: collapse;
-}
+    table:hover {
+      cursor: pointer;
+    }
 
-table th {
-    border-left: 1px solid #000;
-    border-right: 1px solid #000;
-}
+    .navCell:hover {
+      font-size: 22px;
+    }
 
-table th:first-child {
-    border-left: none;
-}
+    table {
+      height: 45px;
+      border: none;
+      border-collapse: collapse;
+      border-right: 40px;
+    }
 
-table th:last-child {
-    border-right: none;
-}
-  
-  nav table tr th {
-    text-align: center;
-    padding: 15px;
-  }
-  
+    table th {
+      border-left: 1px solid #000;
+      border-right: 1px solid #000;
+    }
+
+    table th:first-child {
+      border-left: none;
+    }
+
+    table th:last-child {
+      border-right: none;
+    }
+
+    nav table tr th {
+      text-align: center;
+      padding: 15px;
+    }
+
+    h1 {
+      text-align: center;
+      background-color: rgba(245, 245, 245, 0.600);
+      margin: 50px;
+      ;
+    }
+
+    p#intro {
+      padding: 10px;
+      font-size: 18px;
+      text-align: justify;
+      background-color: rgba(245, 245, 245, 0.600);
+      margin: 50px;
+      margin-right: 50%;
+      font-stretch: ultra-expanded;
+      font-size: larger;
+      word-spacing: 5px;
+      line-height: 23px;
+      line-break: strict;
+    }
   </style>
 
 
@@ -71,26 +94,21 @@ table th:last-child {
 
 
   <script>
-function navHome()
-{
-    window.location.href="Home.html";
-}
-function navGallery()
-{
-    window.location.href="Gallery.html";
-}
-function navMembers()
-{
-    window.location.href="Members.html";
-}
-function navApply()
-{
-    window.location.href="Apply.html";
-}
-function navAbout()
-{
-    window.location.href="AboutUs.html";
-}
+    function navHome() {
+      window.location.href = "Home.html";
+    }
+    function navGallery() {
+      window.location.href = "Gallery.html";
+    }
+    function navMembers() {
+      window.location.href = "Members.html";
+    }
+    function navApply() {
+      window.location.href = "Apply.html";
+    }
+    function navAbout() {
+      window.location.href = "AboutUs.html";
+    }
   </script>
 
 
@@ -100,21 +118,43 @@ function navAbout()
 
 
 </head>
+
 <body>
   <nav>
     <table align="right" class="nav">
-        <tr id="navRow" >
-            <th onclick="navHome()" id="navHome" class="navCell">Home</th>
-            
-            <th onclick="navAbout()" id="navAbout" class="navCell">About Us</th>
-            <th onclick="navMembers()" id="navMembers" class="navCell">Members</th>
-            <th onclick="navGallery()" id="navGallery" class="navCell">Gallery</th>
-            <th onclick="navApply()" id="navApply" class="navCell">Apply</th>
-        </tr>
+      <tr id="navRow">
+        <th onclick="navHome()" id="navHome" class="navCell">Home</th>
+
+        <th onclick="navAbout()" id="navAbout" class="navCell">About Us</th>
+        <th onclick="navMembers()" id="navMembers" class="navCell">Members</th>
+        <th onclick="navGallery()" id="navGallery" class="navCell">Gallery</th>
+        <th onclick="navApply()" id="navApply" class="navCell">Apply</th>
+      </tr>
     </table>
   </nav>
 
-<br>
-<h1>About US</h1>
+  <br><br><br><br><br><br>
+  <h1>Home</h1>
+
+
+  <p id="intro">Welcome to the Astronomy Club of Indian Institute of Information Technology, Kottayam! Our club is
+    dedicated to promoting the study and appreciation of astronomy among students at IIITK. <br><br>
+
+    Through our club, students can explore the wonders of the universe and learn about the latest discoveries in
+    astronomy. Our members have access to telescopes, observatories, and other equipment that allow them to observe
+    celestial bodies up close.<br><br>
+
+    We host a variety of events and activities throughout the year, including stargazing parties, lectures from guest
+    speakers, and astronomy-related workshops. These events provide a great opportunity for members to meet other
+    students who share their passion for astronomy and to learn from experts in the field.<br><br>
+
+    Our club is open to students of all backgrounds and experience levels. Whether you're a seasoned stargazer or a
+    beginner who's just starting to explore the universe, we welcome you to join us and discover the wonders of
+    astronomy.<br><br>
+
+    If you're interested in joining our club, or if you have any questions about our events or activities, please don't
+    hesitate to contact us. We look forward to exploring the universe with you!</p>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 </body>
+
 </html>
