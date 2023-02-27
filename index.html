@@ -6,13 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body onload="onloading()">
+<body onload="setTimeout(onloading, 8000)">
+    <h1 style="text-align: center;" id="Timer"> Website is Loading in 8 seconds...</h1>
     <script>
         function onloading()
         {
             window.location.href="Home.html";
         }
 
+        var timeleft = 7;
+var Timer = setInterval(function(){
+  if(timeleft <= 0){
+    clearInterval(Timer);
+  }
+  document.getElementById("Timer").innerHTML = "Website is Loading in "+ (timeleft)+" seconds...";
+  timeleft -= 1;
+}, 1000);
     </script>
 </body>
 </html>

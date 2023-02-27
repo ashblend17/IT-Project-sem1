@@ -101,6 +101,9 @@
       transform: translateY(-50%);
       width: 102px;
     }
+    footer {
+      background:#454348;
+    }
   </style>
 
   <script>
@@ -110,14 +113,8 @@
     function navGallery() {
       window.location.href = "Gallery.html";
     }
-    function navMembers() {
-      window.location.href = "Members.html";
-    }
-    function navApply() {
-      window.location.href = "Apply.html";
-    }
     function navAbout() {
-      window.location.href = "AboutUs.html";
+      window.location.href = "ContactUs.html";
     }
     var nav = document.querySelector('nav'); // Identify target
 
@@ -142,14 +139,13 @@ window.addEventListener('scroll', function(event) { // To listen for event
 
 <body>
   <nav id="nav">
+    <a href="Home.html"><img src="images/logo.jpg" alt="logo" height="50" width="50" style="margin-left: 100px;"></a>
     <table align="right" class="nav">
       <tr id="navRow">
         <th onclick="navHome()" id="navHome" class="navCell">Home</th>
 
-        <th onclick="navAbout()" id="navAbout" class="navCell">About Us</th>
-        <th onclick="navMembers()" id="navMembers" class="navCell">Members</th>
+        <th onclick="navAbout()" id="navAbout" class="navCell">Contact Us</th>
         <th onclick="navGallery()" id="navGallery" class="navCell">Gallery</th>
-        <th onclick="navApply()" id="navApply" class="navCell">Apply</th>
       </tr>
     </table>
   </nav>
@@ -180,8 +176,28 @@ window.addEventListener('scroll', function(event) { // To listen for event
     If you're interested in joining our club, or if you have any questions about our events or activities, please don't
     hesitate to contact us. We look forward to exploring the universe with you!</p>
     
+    <br><br><br><br><br>
 
-    
+    <footer id="footer">
+      <ul class="footerLogo" style="display:block; list-style-type: none;">
+        <li style="text-align: center;">
+        <a href="Home.html" style="align-content: center;"><img src="images/logo.jpg" height="50" width="50" style="margin: 15px; align-items;"></a>
+        </li>
+      </ul>
+      <br>
+      <h3 style="color: white; text-align: center; margin-left: 40px;">Follow Us</h3>
+      <ul style="display: flex; justify-content: center; list-style-type: none;">
+        <li>
+          <a href="https://www.instagram.com/astroclub_iiitk"><img src="images/instagram.png" height="50" width="50" style="padding: 8px;"> </a>
+        </li>
+        <li>
+          <a href="https://www.discord.com"><img src="images/disord.png" height="50" width="50" style="padding: 8px;"> </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com"><img src="images/linkedin.png" height="50" width="50" style="padding: 8px;"> </a>
+        </li>
+      </ul>
+    </footer>
 
 </body>
 
